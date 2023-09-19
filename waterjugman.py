@@ -1,3 +1,4 @@
+#WATER JUG PROBLEM SOLUTION(Manual)
 a=int(input("Enter jug A Capacity:"))
 b=int(input("Enter jug B Capacity:"))
 ai=int(input("Initial Water in jug A:"))
@@ -7,7 +8,6 @@ bf=int(input("Final State of Jug B:"))
 
 if(a%b==0):
   print("no solution")
-  
   exit()
  
 print("List of operation\n")
