@@ -1,0 +1,26 @@
+#*********Breadth First Search***********************
+#***************************BFS**********************************
+graph={'P':['Q','R','S'],
+       'Q':['P','R'],
+       'R':['P','Q','T'],
+       'S':['P'],
+       'T':['R']}
+
+visited=[]#Keeps track of visited node
+queue=[]#keeps track of nodes which are not yet visited
+
+def bfs(visited,graph,node):
+  visited.append(node)
+  queue.append(node)
+  while queue:
+    s=queue.pop(0)
+    print(s,end=" ")
+
+    for neighbour in graph[s]:
+      if neighbour not in visited:
+        visited.append(neighbour)
+        queue.append(neighbour)
+
+print("Folowing is the breadth first search")
+bfs(visited,graph,'P')      
+  
